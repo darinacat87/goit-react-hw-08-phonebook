@@ -21,13 +21,13 @@ const ContactList = () => {
   return (
     <List>
       {!isLoading &&
-        filterContacts.reverse().map(({ name, id, phone }) => {
+        filterContacts.reverse().map(({ name, id, number }) => {
           return (
             <ContactPhonebook
               key={id}
               id={id}
               name={name}
-              phone={phone}
+              number={number}
               onDeleteBtn={() => deleteContact(id)}
             />
           );
@@ -41,7 +41,7 @@ ContactList.prototypes = {
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      phone: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
     })
   ),
   onDeleteBtn: PropTypes.func.isRequired,

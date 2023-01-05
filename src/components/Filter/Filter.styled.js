@@ -15,7 +15,7 @@ export const FilterInput = styled.input`
   width: 200px;
   height: 40px;
   padding: 0 10px 0 10px;
-  outline: thin dashed blue;
+  outline: thin dashed #1976d2;
   &::placeholder {
     font-size: 14px;
   }

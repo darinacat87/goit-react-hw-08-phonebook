@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Form = styled.form`
   margin-bottom: 40px;
-  color: blue;
+  color: #1976d2;
 `;
 
 export const Label = styled.label`
@@ -23,7 +23,7 @@ export const Input = styled.input`
   &::placeholder {
     font-size: 14px;
   }
-  outline: thin dashed blue;
+  outline: thin dashed #1976d2;
 `;
 
 export const AddContactBtn = styled.button`
@@ -33,7 +33,7 @@ export const AddContactBtn = styled.button`
   justify-content: center;
   width: 100px;
   height: 35px;
-  background-color: blue;
+  background-color: #1976d2;
   color: white;
   font-size: 15px;
   border: 1px solid;
@@ -41,7 +41,7 @@ export const AddContactBtn = styled.button`
   cursor: pointer;
   :hover,
   :focus {
-    background-color: grey;
+    background-color: orange;
     color: white;
   }
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),

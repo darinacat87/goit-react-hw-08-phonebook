@@ -14,7 +14,7 @@ export const Name = styled.span`
   margin: auto;
   color: grey;
 `;
-export const Phone = styled.span`
+export const Number = styled.span`
   font-weight: 500;
   margin: auto;
   color: grey;
@@ -29,12 +29,12 @@ export const DeleteBtn = styled.button`
   height: 30px;
   padding: 10px;
   border: none;
-  background-color: blue;
+  background-color: #1976d2;
   color: white;
   cursor: pointer;
   :hover,
   :focus {
-    background-color: grey;
+    background-color: orange;
   }
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
