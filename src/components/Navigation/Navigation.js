@@ -4,14 +4,14 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import { useSelector } from 'react-redux';
-import { getIsLoggedIn, getUserName } from 'redux/authSlice';
+import { getIsLoggedIn, getUser } from 'redux/authSlice';
 import Login from 'components/Login/Login';
 import Signup from 'components/NavigationSignup/NavigationSignup';
 import NavLogout from 'components/Logout/Logout';
 
 export default function Navigation() {
   const isLoggedIn = useSelector(getIsLoggedIn);
-  const userName = useSelector(getUserName);
+  const user = useSelector(getUser);
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -30,7 +30,7 @@ export default function Navigation() {
             )}
             {isLoggedIn && (
               <>
-                <h3>Hello, {userName} :) </h3>
+                <h3>Hello, {user.name} :) </h3>
                 <NavLogout />
               </>
             )}

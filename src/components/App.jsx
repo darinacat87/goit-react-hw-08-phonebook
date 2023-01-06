@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getToken } from 'redux/authSlice';
-import { useGetCurrentUserQuery } from 'redux/authApi';
+//import { useGetCurrentUserQuery } from 'redux/authApi';
 import Contacts from 'view/ContactsView';
 import LoginView from 'view/LoginView';
 import RegisterView from 'view/RegisterView';
@@ -11,7 +11,7 @@ import PublicRoute from 'route/PublicRoute';
 
 function App() {
   const token = useSelector(getToken);
-  useGetCurrentUserQuery(null, { skip: !token });
+  
   return (
     <>
       <Navigation />
